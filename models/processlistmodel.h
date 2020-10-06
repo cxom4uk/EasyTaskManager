@@ -3,14 +3,18 @@
 
 #include <QObject>
 
-class ProcessListModel : public QObject
+#include <QAbstractTableModel>
+
+namespace easy {
+
+class ProcessListModel : public QAbstractTableModel
 {
     Q_OBJECT
 public:
     explicit ProcessListModel(QObject *parent = nullptr);
 
-signals:
-
 };
+
+}
 
 #endif // PROCESSLISTMODEL_H

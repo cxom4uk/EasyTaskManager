@@ -1,6 +1,6 @@
 #include "processlistmodel.h"
 
-ProcessListModel::ProcessListModel(QObject *parent) : QObject(parent)
+easy::ProcessListModel::ProcessListModel(QObject *parent) : QAbstractTableModel(parent)
 {
 
 }
