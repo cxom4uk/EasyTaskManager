@@ -3,14 +3,22 @@
 
 #include <QObject>
 
+#include <QStringList>
+
+namespace easy  {
+
+typedef QStringList ProcessList;
+
 class BaseFactory : public QObject
 {
     Q_OBJECT
 public:
     explicit BaseFactory(QObject *parent = nullptr);
 
-signals:
+    virtual ProcessList getProcessList() const = 0;
 
 };
+
+}
 
 #endif // BASEFACTORY_H
