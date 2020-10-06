@@ -1,7 +1,3 @@
 # TODO
 
-Firstly make task manager only for locale *nix systems
-
-* [x] virtual Builder
-* locale nix Builder
-* local nix list of the processes getter
+Firstly make task manager only for locale nix systems
