@@ -1,6 +1,6 @@
 #include "basefactory.h"
 
-BaseFactory::BaseFactory(QObject *parent) : QObject(parent)
+easy::BaseFactory::BaseFactory(QObject *parent) : QObject(parent)
 {
 
 }
