@@ -6,6 +6,8 @@
 #include <QDir>
 
 #include <QString>
+#include <QRegularExpression>
+#include <QRegularExpressionMatch>
 
 #include "basefactory.h"
 
