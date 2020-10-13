@@ -4,22 +4,28 @@ CONFIG += c++11
 
 INCLUDEPATH += \
     factories/ \
-    models/
+    models/ \
+    state-objects/
 
 DEPENDPATH += \
     factories/ \
-    models/
+    models/ \
+    state-objects/
 
 HEADERS += \
     factories/basefactory.h \
     factories/localnixfactory.h \
-    models/processlistmodel.h
+    models/processlistmodel.h \
+    state-objects/processstate.h \
+    state-objects/systemstate.h
 
 SOURCES += \
         factories/basefactory.cpp \
         factories/localnixfactory.cpp \
         main.cpp \
-        models/processlistmodel.cpp
+        models/processlistmodel.cpp \
+        state-objects/processstate.cpp \
+        state-objects/systemstate.cpp
 
 RESOURCES += \
         qml.qrc
