@@ -2,6 +2,19 @@ QT += quick
 
 CONFIG += c++11
 
+INCLUDEPATH += \
+    factories/ \
+    models/
+
+DEPENDPATH += \
+    factories/ \
+    models/
+
+HEADERS += \
+    factories/basefactory.h \
+    factories/localnixfactory.h \
+    models/processlistmodel.h
+
 SOURCES += \
         factories/basefactory.cpp \
         factories/localnixfactory.cpp \
@@ -13,12 +26,3 @@ RESOURCES += \
 
 TRANSLATIONS += \
     EasyTaskManager_ru_RU.ts
-
-#qnx: target.path = /tmp/$${TARGET}/bin
-#else: unix:!android: target.path = /opt/$${TARGET}/bin
-#!isEmpty(target.path): INSTALLS += target
-
-HEADERS += \
-    factories/basefactory.h \
-    factories/localnixfactory.h \
-    models/processlistmodel.h
